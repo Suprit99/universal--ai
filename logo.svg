@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="brainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0080ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- AI Brain Circuit Design -->
+  <g fill="none" stroke="url(#brainGradient)" stroke-width="3" stroke-linecap="round">
+    <!-- Main brain outline -->
+    <path d="M50 80 C30 60, 30 40, 50 30 C70 20, 90 20, 110 30 C130 20, 150 20, 170 30 C190 40, 190 60, 170 80 C180 100, 180 120, 170 140 C190 160, 190 180, 170 190 C150 200, 130 200, 110 190 C90 200, 70 200, 50 190 C30 180, 30 160, 50 140 C40 120, 40 100, 50 80 Z"/>
+    
+    <!-- Left hemisphere circuits -->
+    <circle cx="70" cy="70" r="4" fill="url(#brainGradient)"/>
+    <circle cx="85" cy="85" r="3" fill="url(#brainGradient)"/>
+    <circle cx="60" cy="100" r="3" fill="url(#brainGradient)"/>
+    <circle cx="80" cy="115" r="4" fill="url(#brainGradient)"/>
+    <circle cx="65" cy="130" r="3" fill="url(#brainGradient)"/>
+    
+    <!-- Right hemisphere circuits -->
+    <circle cx="130" cy="70" r="4" fill="url(#brainGradient)"/>
+    <circle cx="115" cy="85" r="3" fill="url(#brainGradient)"/>
+    <circle cx="140" cy="100" r="3" fill="url(#brainGradient)"/>
+    <circle cx="120" cy="115" r="4" fill="url(#brainGradient)"/>
+    <circle cx="135" cy="130" r="3" fill="url(#brainGradient)"/>
+    
+    <!-- Central processing unit -->
+    <circle cx="100" cy="100" r="6" fill="url(#brainGradient)"/>
+    
+    <!-- Circuit connections -->
+    <line x1="70" y1="70" x2="85" y2="85"/>
+    <line x1="85" y1="85" x2="100" y2="100"/>
+    <line x1="100" y1="100" x2="115" y2="85"/>
+    <line x1="115" y1="85" x2="130" y2="70"/>
+    
+    <line x1="60" y1="100" x2="80" y2="115"/>
+    <line x1="80" y1="115" x2="100" y2="100"/>
+    <line x1="100" y1="100" x2="120" y2="115"/>
+    <line x1="120" y1="115" x2="140" y2="100"/>
+    
+    <line x1="65" y1="130" x2="80" y2="115"/>
+    <line x1="120" y1="115" x2="135" y2="130"/>
+    
+    <!-- External connection lines -->
+    <line x1="30" y1="90" x2="60" y2="100"/>
+    <line x1="30" y1="110" x2="65" y2="130"/>
+    <line x1="170" y1="90" x2="140" y2="100"/>
+    <line x1="170" y1="110" x2="135" y2="130"/>
+    
+    <!-- Data flow indicators -->
+    <line x1="20" y1="80" x2="35" y2="85"/>
+    <line x1="20" y1="90" x2="35" y2="95"/>
+    <line x1="20" y1="100" x2="35" y2="105"/>
+    <line x1="20" y1="110" x2="35" y2="115"/>
+    <line x1="20" y1="120" x2="35" y2="125"/>
+    
+    <line x1="180" y1="80" x2="165" y2="85"/>
+    <line x1="180" y1="90" x2="165" y2="95"/>
+    <line x1="180" y1="100" x2="165" y2="105"/>
+    <line x1="180" y1="110" x2="165" y2="115"/>
+    <line x1="180" y1="120" x2="165" y2="125"/>
+  </g>
+</svg>

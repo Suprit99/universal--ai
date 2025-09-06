@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSAL AI</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="icon" type="image/png" href="logo.svg">
+    <link rel="apple-touch-icon" href="logo.svg">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <img src="logo.svg" alt="Universal AI Logo" class="logo-image">
+                    <span>UNIVERSAL AI</span>
+                </div>
+                <button class="sidebar-toggle" id="sidebarToggle" title="Toggle Sidebar">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <div class="sidebar-content">
+                <button class="new-chat-btn" id="newChatBtn">
+                    <i class="fas fa-plus"></i>
+                    New Chat
+                </button>
+                
+                <div class="settings-section">
+                    <h3>Settings</h3>
+                    
+                    <div class="setting-item">
+                        <label for="columnCount">Number of Models:</label>
+                        <select id="columnCount">
+                            <option value="2">2 Models</option>
+                            <option value="3" selected>3 Models</option>
+                            <option value="4">4 Models</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="sidebar-footer">
+                <div class="creator-credit">
+                    The Universal AI is created by <strong>Suprit Yadav</strong>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="models-header">
+                <div id="modelsGrid" class="models-grid">
+                    <!-- Model columns will be dynamically generated here -->
+                </div>
+            </div>
+            
+            <div class="chat-area">
+                <div class="messages-container" id="messagesContainer">
+                    <!-- Messages will appear here -->
+                </div>
+                
+                <div class="input-section">
+                    <div class="input-container">
+                        <div class="uploaded-images" id="uploadedImages"></div>
+                        <div class="input-row">
+                            <textarea id="messageInput" placeholder="Ask me anything..." rows="1"></textarea>
+                            <div class="input-actions">
+                                <input type="file" id="imageInput" accept="image/*" multiple style="display: none;">
+                                <button class="action-btn" id="uploadImageBtn" title="Upload Image">
+                                    <i class="fas fa-image"></i>
+                                </button>
+                                <button id="sendButton" class="send-btn">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
