@@ -1,6 +1,6 @@
 class AIModelComparison {
     constructor() {
-        this.apiKey = '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';
+        this.apiKey = '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';
         this.currentColumns = 3;
         this.availableModels = [
             { id: 'openai/gpt-4o', name: 'GPT-4o', icon: 'G', color: '#10a37f', supportsVision: true },
